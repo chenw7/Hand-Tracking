@@ -1,4 +1,4 @@
-#Uses the cv2 and mediapipe library to track hand movement and identify as left or right hand and find distance
+#Uses the cv2 and mediapipe library to track hand movement, identify as left or right hand, and find distance between two index fingers
 
 import cv2
 import mediapipe as mp
@@ -12,13 +12,14 @@ class HandDetector:
     many fingers are up or the distance between two fingers. Also
     provides bounding box info of the hand found.
     """
+    
 
     def __init__(self, mode=False,maxHands=2, detectionCon=0.5, minTrackCon=0.5):
         """
-        :param mode: In static mode, detection is done on each image: slower
-        :param maxHands: Maximum number of hands to detect
-        :param detectionCon: Minimum Detection Confidence Threshold
-        :param minTrackCon: Minimum Tracking Confidence Threshold
+        1. param mode: In static mode, detection is done on each image: slower (CHANGE)
+        2. maximum number of hands to detect is set to 2
+        3. hand detection confidence level minimum is set to 0.5
+        4. hand tracking confidence level minimum is set to 0.5
         """
         self.mode = mode
         self.maxHands = maxHands
