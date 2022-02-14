@@ -1,4 +1,4 @@
-#This program uses the mediapipe and opencv library and tracks the user's hand motions.
+#This program uses the mediapipe and opencv library to track the user's hand motions.
 #Author @Wei-cen Chen
 #Version December 24, 2021
 
