@@ -1,10 +1,13 @@
-#Uses the cv2 and mediapipe library to track hand movement and identify as left or right hand
+#This program uses the mediapipe and opencv library to track the user's hand motions and identify as left or right hand.
+#Author @Wei-cen Chen
+#Version January 2, 2022
 
+#Importing the necessary libraries to run the program
 import cv2
 import mediapipe as mp
 import math
 
-
+#Writes the program using a class structure
 class HandDetector:
     """
     Finds Hands using the mediapipe library. Exports the landmarks
