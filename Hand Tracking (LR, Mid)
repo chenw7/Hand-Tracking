@@ -9,20 +9,10 @@ import math
 
 #Writes the program using a class structure
 class HandDetector:
-    """
-    Finds Hands using the mediapipe library. Exports the landmarks
-    in pixel format. Adds extra functionalities like finding how
-    many fingers are up or the distance between two fingers. Also
-    provides bounding box info of the hand found.
-    """
 
     def __init__(self, mode=False,maxHands=2, detectionCon=0.5, minTrackCon=0.5):
-        """
-        :param mode: In static mode, detection is done on each image: slower
-        :param maxHands: Maximum number of hands to detect
-        :param detectionCon: Minimum Detection Confidence Threshold
-        :param minTrackCon: Minimum Tracking Confidence Threshold
-        """
+        
+        #initializing variables and lists to be implemented later
         self.mode = mode
         self.maxHands = maxHands
         self.detectionCon = detectionCon
@@ -37,16 +27,14 @@ class HandDetector:
         self.lmList = []
 
     def findHands(self, img, draw=True, flipType=True):
-        """
-        Finds hands in a BGR image.
-        :param img: Image to find the hands in.
-        :param draw: Flag to draw the output on the image.
-        :return: Image with or without drawings
-        """
+       
+        #Converts the image into a BGR image.
         imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         self.results = self.hands.process(imgRGB)
         allHands = []
         h, w, c = img.shape
+        
+        #if a hand is detected, store the landmarks in a list
         if  self.results.multi_hand_landmarks:
             for handType,handLms in zip(self.results.multi_handedness,self.results.multi_hand_landmarks):
                 myHand={}
@@ -60,7 +48,7 @@ class HandDetector:
                     xList.append(px)
                     yList.append(py)
 
-                ## bbox
+                #Determining the dimensions of the box
                 xmin, xmax = min(xList), max(xList)
                 ymin, ymax = min(yList), max(yList)
                 boxW, boxH = xmax - xmin, ymax - ymin
@@ -72,6 +60,7 @@ class HandDetector:
                 myHand["bbox"] = bbox
                 myHand["center"] =  (cx, cy)
 
+                #Determine if the hand is left or right hand
                 if flipType:
                     if handType.classification[0].label =="Right":
                         myHand["type"] = "Left"
@@ -80,7 +69,7 @@ class HandDetector:
                 else:myHand["type"] = handType.classification[0].label
                 allHands.append(myHand)
 
-                ## draw
+                #Determine and draw a rectangle around the detected hand & Label hand as left or right
                 if draw:
                     self.mpDraw.draw_landmarks(img, handLms,
                                                self.mpHands.HAND_CONNECTIONS)
@@ -125,17 +114,8 @@ class HandDetector:
         return fingers
 
     def findDistance(self,p1, p2, img=None):
-        """
-        Find the distance between two landmarks based on their
-        index numbers.
-        :param p1: Point1
-        :param p2: Point2
-        :param img: Image to draw on.
-        :param draw: Flag to draw the output on the image.
-        :return: Distance between the points
-                 Image with output drawn
-                 Line information
-        """
+      
+        #When there are two index fingers present, find the distance between them and draw a line connecting the two
 
         x1, y1 = p1
         x2, y2 = p2
@@ -151,7 +131,7 @@ class HandDetector:
         else:
             return length, info
 
-
+#This is the part of the program that utilizes all the variables and methods previously declared
 def main():
     cap = cv2.VideoCapture(0)
     detector = HandDetector(detectionCon=0.8, maxHands=2)
@@ -189,6 +169,6 @@ def main():
         cv2.imshow("Image", img)
         cv2.waitKey(1)
 
-
+#Execute the program
 if __name__ == "__main__":
     main()
