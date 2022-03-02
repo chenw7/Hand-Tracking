@@ -1,4 +1,4 @@
-#This program uses the mediapipe and opencv library to track the user's hand motions and identify as left or right hand.
+#This program utilizes a class structure and utilizes the mediapipe and opencv library to track the user's hand motions and identify as left or right hand.
 #Author @Wei-cen Chen
 #Version January 2, 2022
 
