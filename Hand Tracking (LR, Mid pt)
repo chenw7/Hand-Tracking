@@ -2,7 +2,7 @@
 #Author @Wei-cen Chen
 #Version January 2, 2022
 
-#Importing the necessary libraries to run the program
+#Importing the necessary libraries (cv2, mediapipe, and math) to run the program
 import cv2
 import mediapipe as mp
 import math
@@ -66,8 +66,9 @@ class HandDetector:
                         myHand["type"] = "Left"
                     else:
                         myHand["type"] = "Right"
-                else:myHand["type"] = handType.classification[0].label
-                allHands.append(myHand)
+                else:
+                    myHand["type"] = handType.classification[0].label
+                    allHands.append(myHand)
 
                 #Determine and draw a rectangle around the detected hand & Label hand as left or right
                 if draw:
@@ -142,7 +143,7 @@ def main():
         #Find the hand and its landmarks (the features of the hand that the cv2 library tracks)
         hands, img = detector.findHands(img)  
 
-        #If hands are detected, 
+        #If hands are detected, declare variables and add to declared lists
         if hands:
             #Hand 1
             hand1 = hands[0]
@@ -153,9 +154,9 @@ def main():
 
             fingers1 = detector.fingersUp(hand1)
 
-            #If the length of the list is 2, then there are two hands. Perform same actions that were performed on first hand
+            #If the length of the list is 2, then there are two hands. Perform same actions that were performed on first hand.
             if len(hands) == 2:
-                # Hand 2
+                #Hand 2
                 hand2 = hands[1]
                 lmList2 = hand2["lmList"]  # List of 21 Landmark points
                 bbox2 = hand2["bbox"]  # Bounding box info x,y,w,h
@@ -167,7 +168,8 @@ def main():
                 # Find Distance between two Landmarks. Could be same hand or different hands
                 length, info, img = detector.findDistance(lmList1[8], lmList2[8], img)  # with draw
                 # length, info = detector.findDistance(lmList1[8], lmList2[8])  # with draw
-        # Display
+        
+        # Display everything
         cv2.imshow("Image", img)
         cv2.waitKey(1)
 
