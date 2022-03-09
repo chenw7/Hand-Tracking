@@ -31,7 +31,18 @@ Here are the steps to follow in order to correctly set up your computer to run t
     This command installs the latest version of python, pip, and necessary packages for set up all for you without you needing to do anything. Simply sit back and 
     wait for homebrew to finish installing all the programs and packages for you.
     
-5. 
+5. To test out if python has been correctly installed, type the following command into your terminal.
 
-6. 
+    python3
+    
+    If an error does not appear, python has successfully been installed!
+    If an error does appear, repeat steps 3-4.
+
+6. Now that python has been installed, it's time to install anaconda which will allow for data science packages to be imported into python. Use the following link to install the latest version of anaconda.
+
+    https://www.anaconda.com/products/individual
+
+7. 
+
+8. 
 
