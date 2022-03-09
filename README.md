@@ -18,14 +18,19 @@ Here are the steps to follow in order to correctly set up your computer to run t
     Further instructions will be provided in your terminal to assist you in installing homebrew. 
 
 3. To check if homebrew is installed correctly, type the following command into your terminal.
+ 
     brew help
+    
     If an error does not appear, that means homebrew has been successfully installed and you are ready for the next steps.
     If an error appears, repeat step 2 and make sure you followed the instructions provided in your terminal correctly.
     
 4. Once homebrew has been installed, we can install both python and pip with entering the following command into your terminal.
+ 
     brew install python
+    
     This command installs the latest version of python, pip, and necessary packages for set up all for you without you needing to do anything. Simply sit back and 
-    wait for brew to finish installing all the programs and packages for you.
+    wait for homebrew to finish installing all the programs and packages for you.
+    
 5. 
 
 6. 
