@@ -12,7 +12,9 @@ Here are the steps to follow in order to correctly set up your computer to run t
 1. Firstly, python must be installed. However, we don't have to directly install it from the python website. Instead, we can install python and pip, quickly and efficiently, both with homebrew.
 
 2. To install homebrew, open your terminal and type in the following command.
+
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    
     Further instructions will be provided in your terminal to assist you in installing homebrew. 
 
 3. To check if homebrew is installed correctly, type the following command into your terminal.
