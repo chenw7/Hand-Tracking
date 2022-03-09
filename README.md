@@ -41,8 +41,15 @@ Here are the steps to follow in order to correctly set up your computer to run t
 6. Now that python has been installed, it's time to install anaconda which will allow for data science packages to be imported into python. Use the following link to install the latest version of anaconda.
 
     https://www.anaconda.com/products/individual
+    
+    Follow the instructions provided by the anaconda installation package and install anaconda on your computer.
 
-7. 
+7. To check if anaconda has been installed properly, open the anaconda application. The interface should say anaconda navigator and have various options of what IDE to launch.
 
-8. 
+    If anaconda does not open, reinstall the application (possibly with a different version).
+
+8. Once anaconda has been installed, launch jupyter notebook and a new tab on your browser will be opened.
+<img width="1145" alt="Screen Shot 2022-03-09 at 8 35 13 AM" src="https://user-images.githubusercontent.com/91576538/157349691-ad95c212-6de1-4f2c-8c7b-139b2470e00b.png">
+
+
 
