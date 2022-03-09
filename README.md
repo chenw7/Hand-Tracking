@@ -51,5 +51,8 @@ Here are the steps to follow in order to correctly set up your computer to run t
 8. Once anaconda has been installed, launch jupyter notebook and a new tab on your browser will be opened.
 <img width="1145" alt="Screen Shot 2022-03-09 at 8 35 13 AM" src="https://user-images.githubusercontent.com/91576538/157349691-ad95c212-6de1-4f2c-8c7b-139b2470e00b.png">
 
+    Your tab should look similar to the one above.
+    
+9. Hi
 
 
