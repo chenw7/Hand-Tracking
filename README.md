@@ -59,6 +59,7 @@ https://github.com/chenw7/Hand-Tracking/blob/main/Hand%20Tracking%20(FPS)
         
 https://github.com/chenw7/Hand-Tracking/blob/main/Hand%20Tracking%20(LR%2C%20Mid%20pt)
         
+11. Once you have copied the code over into your notebook, you can execute the program by clicking command+enter. A new window should appear from your terminal and track your hand movements using your computer's web cam.
         
 
 
