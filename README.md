@@ -19,7 +19,7 @@ Here are the steps to follow in order to correctly set up your computer to run t
 
 3. To check if homebrew is installed correctly, type the following command into your terminal.
  
-    brew help
+        brew help
     
     If an error does not appear, that means homebrew has been successfully installed and you are ready for the next steps.
     If an error appears, repeat step 2 and make sure you followed the instructions provided in your terminal correctly.
@@ -51,6 +51,8 @@ Here are the steps to follow in order to correctly set up your computer to run t
 8. Once anaconda has been installed, launch jupyter notebook and a new tab on your browser will be opened. It should look similar to the picture below.
 <img width="1145" alt="Screen Shot 2022-03-09 at 8 35 13 AM" src="https://user-images.githubusercontent.com/91576538/157349691-ad95c212-6de1-4f2c-8c7b-139b2470e00b.png">
     
-9. Hi
+9. Select the location in which you would like to store your python files. Once you have reached the folder/location you would like to store your file, create a new jupyter notebook (On the top left corner, click new, and then click python3). <img width="1156" alt="Screen Shot 2022-03-09 at 9 02 40 AM" src="https://user-images.githubusercontent.com/91576538/157352417-4922dbff-ef54-40de-a57d-6ef63fe3ee02.png">
+
+
 
 
