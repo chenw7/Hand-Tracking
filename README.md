@@ -48,10 +48,8 @@ Here are the steps to follow in order to correctly set up your computer to run t
 
     If anaconda does not open, reinstall the application (possibly with a different version).
 
-8. Once anaconda has been installed, launch jupyter notebook and a new tab on your browser will be opened.
+8. Once anaconda has been installed, launch jupyter notebook and a new tab on your browser will be opened. It should look similar to the picture below.
 <img width="1145" alt="Screen Shot 2022-03-09 at 8 35 13 AM" src="https://user-images.githubusercontent.com/91576538/157349691-ad95c212-6de1-4f2c-8c7b-139b2470e00b.png">
-
-    Your tab should look similar to the one above.
     
 9. Hi
 
