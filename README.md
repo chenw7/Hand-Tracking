@@ -64,11 +64,11 @@ https://github.com/chenw7/Hand-Tracking/blob/main/Hand%20Tracking%20(LR%2C%20Mid
 12. The only errors that should appear are module "[the module you're missing]" doesn't exist. To solve this issue, enter the following commands into your terminal.
 
         pip install opencv-python==3.4.8.29
-        
+       
         pip install opencv-contrib-python==3.4.8.29
         
         pip install mediapipe
         
         pip install time
-        
+ 
 13. If errors regarding cv2 or any of the other modules still exist, search for solutions on stackoverflow (most solutions to your problems can be found).
