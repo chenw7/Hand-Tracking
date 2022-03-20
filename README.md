@@ -61,5 +61,6 @@ https://github.com/chenw7/Hand-Tracking/blob/main/Hand%20Tracking%20(LR%2C%20Mid
         
 11. Once you have copied the code over into your notebook, you can execute the program by clicking command+enter. A new window should appear from your terminal and track your hand movements using your computer's web cam.
         
+12. The only errors that should appear are module "[the module you're missing]" doesn't exist. To solve this issue, enter the following commands into your terminal.
 
-
+        pip install cv2
