@@ -59,9 +59,7 @@ https://github.com/chenw7/Hand-Tracking/blob/main/Hand%20Tracking%20(FPS)
         
 https://github.com/chenw7/Hand-Tracking/blob/main/Hand%20Tracking%20(LR%2C%20Mid%20pt)
         
-11. Once you have copied the code over into your notebook, you can execute the program by clicking command+enter. A new window should appear from your terminal and track your hand movements using your computer's web cam.
-        
-12. The only errors that should appear are module "[the module you're missing]" doesn't exist. To solve this issue, enter the following commands into your terminal.
+11. Install the necessary libraries to run the program using pip. Enter the following commands in your terminal.
 
         pip install opencv-python==3.4.8.29
        
@@ -70,5 +68,11 @@ https://github.com/chenw7/Hand-Tracking/blob/main/Hand%20Tracking%20(LR%2C%20Mid
         pip install mediapipe
         
         pip install time
+        
+12. Now that all necessary libraries and accessories for the program have been installed, copy the code into jupyter notebook. You can execute the program by clicking command+enter. A new window should appear from your terminal and track your hand movements using your computer's web cam.
  
 13. If errors regarding cv2 or any of the other modules still exist, search for solutions on stackoverflow (most solutions to your problems can be found).
+
+14. Here are the outputs to the 2 programs. The first one should display results similar to these. 
+<img width="683" alt="Screen Shot 2022-03-21 at 8 47 44 AM" src="https://user-images.githubusercontent.com/91576538/159194114-f8c67068-2b2b-4046-a8d5-15eb7e9778be.png">
+<img width="1278" alt="Screen Shot 2022-03-21 at 8 48 11 AM" src="https://user-images.githubusercontent.com/91576538/159194122-96ee0ac6-1cb5-4571-81d2-d3389857320f.png">
