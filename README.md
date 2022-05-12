@@ -1,6 +1,4 @@
 # Hand-Tracking
-This repository includes programs that tracks the user's hand with a live feed from their webcam on their computer.
-
 Before you can execute the code, there are a few programs/applications and program extensions that need to be installed on your computer: 
 1. python (high-level programming language)
 2. anaconda (allows for data science package installation in python)
