@@ -65,7 +65,7 @@ Here are the steps to follow in order to correctly set up your computer to run t
         
         pip install mediapipe
         
-12. Now that all necessary libraries and accessories for the program have been installed, check whether they have been installed correctly by typing the following command into jupyter notebook and executing the command.
+12. Now that all necessary libraries and accessories for the program have been installed, check whether they have been installed correctly by typing the following command into jupyter notebook and executing the command (execute the command by clicking command+enter).
 
         import cv2
         import mediapipe
@@ -73,7 +73,7 @@ Here are the steps to follow in order to correctly set up your computer to run t
         
        If an error message does not appear, you can proceed onto the next step.
         
-13. Copy the code into jupyter notebook. You can execute the program by clicking command+enter. A new window should appear from your terminal and track your hand movements using your computer's web cam.
+13. Copy the code (provided in step 10) into jupyter notebook and run the program. A new window should appear from your terminal and track your hand movements using your computer's web cam.
 
 14. If errors regarding cv2 or any of the other modules still exist, search for solutions on stackoverflow (most solutions to your problems can be found).
 
@@ -84,6 +84,8 @@ The first one should display results similar to these.
 <img width="665" alt="Screen Shot 2022-05-13 at 11 36 04 AM" src="https://user-images.githubusercontent.com/91576538/168206543-93044c3f-cb05-471e-a8a1-8d834218f235.png">
 
 <img width="584" alt="Screen Shot 2022-05-13 at 11 36 21 AM" src="https://user-images.githubusercontent.com/91576538/168206605-94fb4b90-50a0-407b-98a4-d79eae9cb366.png">
+
+
 
 
 The second one should display results similar to these.
