@@ -71,7 +71,7 @@ Here are the steps to follow in order to correctly set up your computer to run t
         import mediapipe
         import time
         
-        If an error message does not appear, you can proceed onto the next step.
+       If an error message does not appear, you can proceed onto the next step.
         
 13. Copy the code into jupyter notebook. You can execute the program by clicking command+enter. A new window should appear from your terminal and track your hand movements using your computer's web cam.
 
@@ -80,12 +80,14 @@ Here are the steps to follow in order to correctly set up your computer to run t
 Here are the outputs to the 2 programs. 
 
 The first one should display results similar to these. 
+
 <img width="665" alt="Screen Shot 2022-05-13 at 11 36 04 AM" src="https://user-images.githubusercontent.com/91576538/168206543-93044c3f-cb05-471e-a8a1-8d834218f235.png">
 
 <img width="584" alt="Screen Shot 2022-05-13 at 11 36 21 AM" src="https://user-images.githubusercontent.com/91576538/168206605-94fb4b90-50a0-407b-98a4-d79eae9cb366.png">
 
 
 The second one should display results similar to these.
+
 <img width="564" alt="Screen Shot 2022-05-13 at 11 24 25 AM" src="https://user-images.githubusercontent.com/91576538/168205491-12eaac8b-869c-450b-b09c-6bc8a9d51059.png">
 
 <img width="843" alt="Screen Shot 2022-05-13 at 11 25 26 AM" src="https://user-images.githubusercontent.com/91576538/168205515-b083ae16-51b6-4b77-ac00-4c1cb014972d.png">
