@@ -95,4 +95,4 @@ The second one should display results similar to these.
 <img width="1119" alt="Screen Shot 2022-05-13 at 11 26 26 AM" src="https://user-images.githubusercontent.com/91576538/168205598-60f94059-7c50-4efd-b90c-9263e90a8404.png">
 
 
-Note that both prgrams have a limitation of tracking two hands simultaneously due to the processing speed of the computer and the structure of the program which sets a maximum capacity of detecting two hands in the webcam at time.
+Note that both prgrams have a limitation of tracking two hands simultaneously due to the processing speed of the computer and the structure of the program which sets a maximum capacity of detecting two hands in the webcam at once.
