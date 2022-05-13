@@ -53,7 +53,9 @@ Here are the steps to follow in order to correctly set up your computer to run t
 
 10. Once your notebook has been created, click on the link below to see the source code to the hand-tracking program (explanations to the code are included as comments in the source code).
 
-https://github.com/chenw7/Simple-Facial-Recognition/blob/main/Facial%20Recognition%20(Simple).py
+        https://github.com/chenw7/Hand-Tracking/blob/main/Hand%20Tracking%20(FPS)
+
+        https://github.com/chenw7/Hand-Tracking/blob/main/Hand%20Tracking%20(LR)
         
 11. Install the necessary libraries to run the program using pip (in your terminal). Enter the following commands in your terminal.
 
@@ -61,12 +63,16 @@ https://github.com/chenw7/Simple-Facial-Recognition/blob/main/Facial%20Recogniti
        
         pip install opencv-contrib-python==3.4.8.29
         
-        pip install face_recognition
+        pip install mediapipe
         
-        pip install numpy
+12. Now that all necessary libraries and accessories for the program have been installed, check whether they have been installed correctly by typing the following command into jupyter notebook and executing the command.
+
+        import cv2
+        import mediapipe
+        import time
         
-12. Now that all necessary libraries and accessories for the program have been installed, you need to add two images into the same folder as your folder (as shown in the screenshot below).
- 
+        If an error message does not appear, you can proceed onto the next step.
+        
 13. Copy the code into jupyter notebook. You can execute the program by clicking command+enter. A new window should appear from your terminal and track your hand movements using your computer's web cam.
 
 14. If errors regarding cv2 or any of the other modules still exist, search for solutions on stackoverflow (most solutions to your problems can be found).
@@ -74,4 +80,17 @@ https://github.com/chenw7/Simple-Facial-Recognition/blob/main/Facial%20Recogniti
 Here are the outputs to the 2 programs. 
 
 The first one should display results similar to these. 
+<img width="665" alt="Screen Shot 2022-05-13 at 11 36 04 AM" src="https://user-images.githubusercontent.com/91576538/168206543-93044c3f-cb05-471e-a8a1-8d834218f235.png">
 
+<img width="584" alt="Screen Shot 2022-05-13 at 11 36 21 AM" src="https://user-images.githubusercontent.com/91576538/168206605-94fb4b90-50a0-407b-98a4-d79eae9cb366.png">
+
+
+The second one should display results similar to these.
+<img width="564" alt="Screen Shot 2022-05-13 at 11 24 25 AM" src="https://user-images.githubusercontent.com/91576538/168205491-12eaac8b-869c-450b-b09c-6bc8a9d51059.png">
+
+<img width="843" alt="Screen Shot 2022-05-13 at 11 25 26 AM" src="https://user-images.githubusercontent.com/91576538/168205515-b083ae16-51b6-4b77-ac00-4c1cb014972d.png">
+
+<img width="1119" alt="Screen Shot 2022-05-13 at 11 26 26 AM" src="https://user-images.githubusercontent.com/91576538/168205598-60f94059-7c50-4efd-b90c-9263e90a8404.png">
+
+
+Note that both prgrams have a limitation of tracking two hands simultaneously due to the processing speed of the computer and the structure of the program which sets a maximum capacity of detecting two hands in the webcam at time.
