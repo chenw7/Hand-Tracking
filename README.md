@@ -51,7 +51,7 @@ Here are the steps to follow in order to correctly set up your computer to run t
     
 9. Select the location in which you would like to store your python files. Once you have reached the folder/location you would like to store your file, create a new jupyter notebook (On the top left corner, click new, and then click python3). <img width="1156" alt="Screen Shot 2022-03-09 at 9 02 40 AM" src="https://user-images.githubusercontent.com/91576538/157352417-4922dbff-ef54-40de-a57d-6ef63fe3ee02.png">
 
-10. Once your notebook has been created, click on the link below to see the source code to the simple face recognition program (explanations to the code are included as comments in the source code).
+10. Once your notebook has been created, click on the link below to see the source code to the hand-tracking program (explanations to the code are included as comments in the source code).
 
 https://github.com/chenw7/Simple-Facial-Recognition/blob/main/Facial%20Recognition%20(Simple).py
         
