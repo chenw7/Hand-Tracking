@@ -59,9 +59,9 @@ Here are the steps to follow in order to correctly set up your computer to run t
         
 11. Install the necessary libraries to run the program using pip (in your terminal). Enter the following commands in your terminal.
 
-        pip install opencv-python==3.4.8.29
+        pip install opencv-python==4.5.5.64
        
-        pip install opencv-contrib-python==3.4.8.29
+        pip install opencv-contrib-python==4.5.5.64
         
         pip install mediapipe
         
