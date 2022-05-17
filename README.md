@@ -53,7 +53,7 @@ Here are the steps to follow in order to correctly set up your computer to run t
 
 10. Once your notebook has been created, click on the link below to see the source code to the hand-tracking program (explanations to the code are included as comments in the source code).
 
-       https://github.com/chenw7/Hand-Tracking/blob/main/Hand%20Tracking%20(FPS)
+       https://github.com/chenw7/Hand-Tracking/blob/main/Hand-Tracking%20(FPS).py
 
        https://github.com/chenw7/Hand-Tracking/blob/main/Hand-Tracking%20(LR).py
         
